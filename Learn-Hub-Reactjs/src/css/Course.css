@@ -1,0 +1,80 @@
+.course-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  margin-bottom: 1.5rem; /* More spacing between cards */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  overflow: hidden; /* Ensure content doesn't overflow the card */
+}
+
+.course-card:hover {
+  transform: translateY(-8px); /* Slightly more pronounced hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.course-card .card-title {
+  color: #212529; /* Darker color for better readability */
+  font-weight: 600; /* Slightly lighter font weight */
+  font-size: 1.25rem; /* Increased font size */
+  margin-bottom: 0.75rem; /* More space below the title */
+}
+
+.course-card .card-text {
+  color: #495057; /* Slightly darker gray for better contrast */
+  font-size: 1rem; /* Ensure readability on all devices */
+  line-height: 1.6; /* Better line spacing */
+  margin-bottom: 1rem; /* Space between text and buttons */
+}
+
+.course-card .btn {
+  min-width: 120px; /* Slightly wider buttons */
+  font-weight: 500; /* Slightly bolder text for better readability */
+  padding: 0.5rem 1rem; /* Increased padding for a more substantial feel */
+  border-radius: 6px; /* Slightly rounded buttons */
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.course-card .btn-danger {
+  margin-right: 0.5rem;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.course-card .btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.course-card .btn-warning {
+  margin-left: 0.5rem;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.course-card .btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+  .course-card {
+    margin-bottom: 1rem; /* Less spacing on smaller screens */
+  }
+
+  .course-card .card-title {
+    font-size: 1.1rem; /* Slightly smaller title on smaller screens */
+  }
+
+  .course-card .card-text {
+    font-size: 0.95rem; /* Slightly smaller text on smaller screens */
+  }
+
+  .course-card .btn {
+    min-width: 100px; /* Adjust button width on smaller screens */
+    padding: 0.45rem 0.9rem; /* Adjust padding on smaller screens */
+  }
+}

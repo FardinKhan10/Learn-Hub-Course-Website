@@ -1,0 +1,132 @@
+/* Home.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* General container styling */
+.home-container {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.home-container h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.home-container h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #007bff;
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+/* Subheading styles */
+.home-container h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.home-container h5::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #007bff;
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+/* Paragraph styles */
+.home-container p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Strong text (for course titles and section headings) */
+.home-container b {
+  color: #343a40;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Horizontal rule styling */
+.home-container hr {
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  margin: 1.5rem 0;
+}
+
+/* Link styling */
+.home-container a {
+  color: #007bff;
+  text-decoration: none;
+  position: relative;
+}
+
+.home-container a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s;
+}
+
+.home-container a:hover::after {
+  width: 100%;
+}
+
+/* Image styling */
+.home-container .home-image {
+  width:50rem;
+  max-width: 300px; /* Set a maximum width for smaller images */
+  height: 25rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+  transition: opacity 0.3s, transform 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.home-container .home-image:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+/* Responsive styling */
+@media (min-width: 768px) {
+  .home-container .home-image {
+    max-width: 75%; /* Adjust for larger screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .home-container .home-image {
+    max-width: 60%; /* Adjust for larger screens */
+  }
+}

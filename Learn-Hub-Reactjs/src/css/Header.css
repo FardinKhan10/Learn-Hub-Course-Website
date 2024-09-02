@@ -1,0 +1,59 @@
+/* Menus.css */
+
+/* Navbar styling */
+.navbar {
+  background-color: black !important;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar brand styling */
+.navbar-brand h2 {
+  color: #fcfbfb;
+  margin: 0;
+  transition: color 0.3s;
+  margin-left:1rem;
+}
+
+.navbar-brand h2:hover {
+  color: #007bff;
+}
+
+/* Navbar link styling */
+.nav-link {
+  color: #ffffff !important;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 4px;
+  margin: 0 0.5rem;
+}
+
+.nav-link.active {
+  color: #007bff !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+  background-color: #1a1a1a;
+  text-decoration: none;
+}
+
+/* Responsive spacing for larger screens */
+@media (min-width: 768px) {
+  .nav-link {
+      margin: 0 1rem;
+  }
+}
+
+/* Align the nav items to the right */
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  
+
+
+  
